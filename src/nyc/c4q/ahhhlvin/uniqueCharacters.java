@@ -5,11 +5,13 @@ package nyc.c4q.ahhhlvin;
 * Alvin Kuang
 * 3.23.2015
 *
+* Collaborated with @hyunje0 &  @alizinha
+*
 */
 
 import java.util.Scanner;
 
-public class Main {
+public class uniqueCharacters {
 
     public static void main(String[] args) {
 
@@ -45,4 +47,5 @@ public class Main {
         return S2;
 
     }
+
 }
