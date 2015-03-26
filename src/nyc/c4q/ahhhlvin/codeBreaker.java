@@ -15,8 +15,17 @@ public class codeBreaker {
 
         System.out.println("Please enter a message: ");
         String messageOne = input.nextLine();
+        messageOne = CaesarCipher.encode(messageOne, 3);
         System.out.println("Please enter another message: ");
         String messageTwo = input.nextLine();
+        messageTwo = CaesarCipher.encode(messageTwo, 8);
+
+        // System.out.println(messageOne);
+        // System.out.println(messageTwo);
+
+       // System.out.println(CaesarCipher.decode("fxsfdnh", 3));
+       // System.out.println(CaesarCipher.decode("kcxkism", 8));
+
 
 
         System.out.println(codeBreaker(messageOne, messageTwo));
@@ -25,7 +34,7 @@ public class codeBreaker {
     public static boolean codeBreaker(String one, String two) {
 
 
-        if (CaesarCipher.decode(one, 26) == CaesarCipher.encode(two, 26)) {
+        if (CaesarCipher.decode(one, 3).equals(CaesarCipher.decode(two, 8))) {
             return true;
         } else {
             return false;
