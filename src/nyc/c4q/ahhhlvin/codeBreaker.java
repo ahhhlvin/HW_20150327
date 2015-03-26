@@ -20,6 +20,7 @@ public class codeBreaker {
         String messageTwo = input.nextLine();
         messageTwo = CaesarCipher.encode(messageTwo, 8);
 
+        // for testing purposes
         // System.out.println(messageOne);
         // System.out.println(messageTwo);
 
