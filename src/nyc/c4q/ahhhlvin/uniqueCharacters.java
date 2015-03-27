@@ -19,7 +19,7 @@ public class uniqueCharacters {
 
 
         System.out.println("Please enter a word: ");
-        String S = input.next();
+        String S = input.nextLine();
         System.out.println(uniqueCharacters(S));
 
     }
